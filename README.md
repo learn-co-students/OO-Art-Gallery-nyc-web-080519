@@ -26,48 +26,48 @@ An artist can, of course, have many paintings. Paintings can only be in one gall
 
 **ARTIST**
 
-  * `Artist.all`
+  * `Artist.all` #DONE
     * Returns an `array` of all the artists
 
-  * `Artist#paintings`
+  * `Artist#paintings`#DONE 
     * Returns an `array` all the paintings by an artist
 
-  * `Artist#galleries`
+  * `Artist#galleries` #DONE 
     * Returns an `array` of all the galleries that an artist has paintings in
 
-  * `Artist#cities`
+  * `Artist#cities` #DONE
     * Return an `array` of all cities that an artist has paintings in
 
-  * `Artist.total_experience`
+  * `Artist.total_experience` #DONE
     * Returns an `integer` that is the total years of experience of all artists
 
   * `Artist.most_prolific`
     * Returns an `instance` of the artist with the highest amount of paintings per year of experience.
 
-  * `Artist#create_painting`
+  * `Artist#create_painting` #DONE 
     * Given the arguments of `title`, `price` and `gallery`, creates a new painting belonging to that artist
 
 **PAINTING**
 
-  * `Painting.all`
+  * `Painting.all` #DONE
     * Returns an `array` of all the paintings
 
-  * `Painting.total_price`
+  * `Painting.total_price` #DONE 
     * Returns an `integer` that is the total price of all paintings
 
 **GALLERY**
 
-  * `Gallery.all`
+  * `Gallery.all` #DONE
     * Returns an `array` of all the galleries
 
-  * `Gallery#paintings`
+  * `Gallery#paintings` #DONE 
     * Returns an `array` of all paintings in a gallery
 
-  * `Gallery#artists`
+  * `Gallery#artists` #DONE 
     * Returns an `array` of all artists that have a painting in a gallery
 
-  * `Gallery#artist_names`
+  * `Gallery#artist_names` #DONE 
     * Returns an `array` of the names of all artists that have a painting in a gallery
 
-  * `Gallery#most_expensive_painting`
+  * `Gallery#most_expensive_painting` #DONE
     * Returns an `instance` of the most expensive painting in a gallery

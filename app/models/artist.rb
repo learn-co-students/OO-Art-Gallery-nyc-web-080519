@@ -38,7 +38,7 @@ class Artist
     self.all.max_by do |artist|
       artist.paintings.length / artist.years_experience
     end 
-  end
+  end 
 
   def create_painting(title, price, gallery)
     Painting.new(title, price, self, gallery)

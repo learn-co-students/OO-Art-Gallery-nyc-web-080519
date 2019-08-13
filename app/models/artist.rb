@@ -35,16 +35,9 @@ class Artist
 
   #instance of artist w/ highest amount of paintings per year of exp
   def self.most_prolific 
-    hash = Hash.new(0)
-    artists = Painting.all.map{|painting| painting.artist}
-    puts artists
-    artist_hash = artists.each do |artist|
-      hash[artists] += 1
-    puts artist_hash
+    self.all.max_by do |artist|
+      artist.paintings.length / artist.years_experience
     end 
-    highest_paintings = artist_hash.sort_by{|artist, num| num}
-    puts highest_paintings
-    highest_paintings.last 
   end
 
   def create_painting(title, price, gallery)

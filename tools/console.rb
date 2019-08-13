@@ -20,6 +20,6 @@ p7 = Painting.new("PRETTY PLEASE", 20000, a4, g1)
 
 
 
-#binding.pry
+binding.pry
 puts Artist.most_prolific
 puts "Bob Ross rules."
